@@ -20,10 +20,10 @@ class Esercizio {
             scambio = false;
             j = i + 1;
             while(j < N){
-                if(V[i] > V[j]){
-                    temp = V[i];
-                    V[i] = V[j];
-                    V[j] = temp;
+                if(V[j] > V[j+1]){
+                    temp = V[j];
+                    V[j] = V[j+1];
+                    V[j+1] = temp;
                     scambio = true;
                 }
                 ++j;
