@@ -18,8 +18,8 @@ class Esercizio {
 
         while(i < N-1 && scambio){
             scambio = false;
-            j = i + 1;
-            while(j < N){
+            j = 0;
+            while(j < N-i-1){
                 if(V[j] > V[j+1]){
                     temp = V[j];
                     V[j] = V[j+1];
